@@ -1,0 +1,18 @@
+<div class="login-container">
+  <form class="login-form" action="" >
+    <h1>Welcome</h1>
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" placeholder="username" />
+    <label for="password">Password: </label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="password"
+    />
+    <button class="login-button">Login</button>
+    <a [routerLink]="'[/register]'">
+      <button class="register-button" type="but">Register</button>
+    </a>
+  </form>
+</div>

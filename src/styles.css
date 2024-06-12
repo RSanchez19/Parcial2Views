@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    background-color:  #36454F;
+    font-family: 'Catamaran', sans-serif;
+  }
+  
+  h1 {
+    color: #F9F6EE;
+  }
+  
+  label {
+    color: #F9F6EE;
+  }
+  
