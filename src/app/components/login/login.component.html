@@ -1,18 +1,16 @@
 <div class="login-container">
-  <form class="login-form" action="" >
+  <div class="response" *ngIf="loginResponse">
+    <p>{{loginResponse}}</p>
+  </div>
+  <form class="login-form" (ngSubmit)="onSUbmit()" >
     <h1>Welcome</h1>
     <label for="username">Username: </label>
-    <input type="text" id="username" name="username" placeholder="username" />
+    <input type="text" name="username" placeholder="username" [(ngModel)]="username"/>
     <label for="password">Password: </label>
-    <input
-      type="password"
-      id="password"
-      name="password"
-      placeholder="password"
-    />
-    <button class="login-button">Login</button>
-    <a [routerLink]="'[/register]'">
-      <button class="register-button" type="but">Register</button>
-    </a>
+    <input type="password" [(ngModel)]="password" name="password" placeholder="password"/>
+    <button class="login-button" type="submit">Login</button>
+    <p>
+      Don't have an account? <a routerLink="register">Register</a>
+    </p>
   </form>
 </div>

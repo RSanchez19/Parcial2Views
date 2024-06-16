@@ -13,3 +13,11 @@ html {
     color: #F9F6EE;
   }
   
+  a {
+    color: #F9F6EE;
+    text-decoration: none;
+  }
+
+  p {
+    color: #F9F6EE;
+  }
