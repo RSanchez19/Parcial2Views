@@ -20,4 +20,13 @@ html {
 
   p {
     color: #F9F6EE;
+    margin: 0px;
+  }
+
+  h2 {
+    color: #F9F6EE;
+  }
+  
+  h5 {
+    color: #F9F6EE;
   }

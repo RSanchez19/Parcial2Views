@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
 
   loginResponse: string;
  
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient, private router: Router){
     this.username = '';
     this.password = '';
     this.loginResponse = '';
@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
     this.http.post('http://localhost:8080/auth/login',{username: this.username, password: this.password})
     .subscribe((response: any) => {
       console.log(response, 'login succesful');
+      this.router.navigateByUrl('/appointment')
     }, (error: any) => {
     console.error(error, 'login failed');
     this.loginResponse = 'Incorrect username or password, try again'

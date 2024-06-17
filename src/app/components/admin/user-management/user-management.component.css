@@ -1,0 +1,9 @@
+.updateRoleForm {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

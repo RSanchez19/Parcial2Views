@@ -22,8 +22,8 @@ export class RegisterComponent implements OnInit {
 
   };
 
-  returnUrl: string;
-  registrationStatus: string;
+  returnUrl: String;
+  registrationStatus: String;
 
   constructor(private http: HttpClient, private router: Router) {
     this.registrationStatus = '';
